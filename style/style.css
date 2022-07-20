@@ -113,7 +113,7 @@
 }
 .main-left-btn{
     width: 312px;
-    height: 348px;
+    height: 312px;
     background-color: black;
     border-radius: 10px;
     display: flex;
@@ -383,7 +383,7 @@ hr{
     .main-right-cards{
         grid-template-columns: repeat(2, 1fr);
     }
-    .card:last-child{
+    .temp-card{
         display: none;
     }
     .view-all-btn{

@@ -38,7 +38,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
     margin-bottom: 100px;
     position: relative;
 }
@@ -348,6 +347,9 @@ hr{
     .container{
         margin-bottom: 50px;
     }
+    .header{
+        margin-bottom: 0;
+    }
     .slider{
         text-align: center;
         flex-direction: column;
@@ -381,7 +383,7 @@ hr{
         flex-direction: column;
     }
     .main-left{
-        margin: 0 0 24px 0;
+        margin: 0;
     }
     .main-left-btn{
         background-color: transparent;
@@ -427,7 +429,7 @@ hr{
 /* tablet device 481px — 768px */
 @media only screen and (min-width: 481px) and (max-width: 768px){
     .container{
-        margin-bottom: 00px;
+        margin-bottom: 50px;
     }
     .slider{
         height: auto;

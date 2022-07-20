@@ -446,3 +446,37 @@ hr{
 }
 /* card style end */
 /* upcoming match page design end */
+
+/* all group page design start */
+/* card style start */
+.card-bg{
+    background-color: #4d4d4d;
+}
+.group-name{
+    background-color: tomato;
+    border-radius: 5px 5px 0 0;
+    text-align: center;
+    padding: 25px 0;
+}
+.all-team{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px 0;
+}
+.team{
+    display: flex;
+    align-items: center;
+    padding: 15px 25px;
+}
+.team img{
+    width: 30%;
+    border-radius: 5px;
+}
+.team p{
+    font-size: 24px;
+    margin-left: 10px;
+    font-weight: 700;
+}
+/* card style end */
+/* all group page design end */

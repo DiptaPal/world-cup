@@ -1,6 +1,32 @@
 /* google font */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+/* animation style start */
+@keyframes sliding {
+    0%{
+        background-color: lightgreen;
+        color: black;
+    }
+    25%{
+        background-color: orange;
+        color: black;
+    }
+    50%{
+        top:0;
+        background-color: red;
+        color: white;
+    }
+    75%{
+        background-color: cyan;
+        color: black;
+    }
+    100%{
+        background-color: magenta;
+        color: white;
+    } 
+}
+/* animation style end */
+
 /* common style start */
 *{
     font-family: 'Poppins', sans-serif;
@@ -17,32 +43,6 @@
     position: relative;
 }
 /* common style end */
-
-/* animation style start */
-@keyframes sliding {
-    0%{
-        background-color: lightgreen;
-        color: black;
-    }
-    25%{
-        background-color: orange;
-        color: white;
-    }
-    50%{
-        top:0;
-        background-color: tomato;
-        color: black;
-    }
-    75%{
-        background-color: cyan;
-        color: black;
-    }
-    100%{
-        background-color: magenta;
-        color: white;
-    } 
-}
-/* animation style end */
 
 /* header slider section style star */
 .slider{
@@ -73,6 +73,7 @@
     text-decoration: none;
     padding: 16px 25px;
     font-size: 20px;
+    font-weight: 700;
     position: relative;
     background-color: red;
     color: white;
@@ -130,6 +131,11 @@
     font-size: 20px;
     border-radius: 10px;
     margin-bottom: 30px;
+    transition: all 0.5s ease-in-out
+}
+.main-left-btn a:hover{
+    background-color: #dd0000;
+    color: white;  
 }
 .main-left-btn a:last-child{
     background-color: #dd0000;
@@ -164,6 +170,13 @@
     background-color: white;
     border: 1px solid black;
     border-radius: 5px;
+    transition: all 0.5s ease-in-out;
+}
+.card-btn:hover{
+    background-color: #dd0000;
+    color: white;
+    border-color: #dd0000;
+    cursor: pointer;
 }
 .card-title{
     font-weight: 600;
@@ -247,8 +260,83 @@ hr{
 /* footer section style end */
 
 
+/* upcoming match page design start */
+/* card style start */
+.match{
+    border: 0.5px solid #E8E8E8;
+}
+.match-schedule{
+    padding: 50px 30px;
+}
+.flag-img{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.flag-img img{
+    width: 40%;
+}
+.vs{
+    font-weight: 700;
+    font-size: 16px;
+}
+.match-details{
+    padding-top: 20px;
+    text-align: center;
+}
+.match-title{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+}
+.match-time{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #4d4d4d;
+}
+/* card style end */
+/* upcoming match page design end */
+
+/* all group page design start */
+/* card style start */
+.card-bg{
+    background-color: #4d4d4d;
+}
+.group-name{
+    background-color: rgb(36, 153, 248);
+    color: white;
+    border-radius: 5px 5px 0 0;
+    text-align: center;
+    padding: 25px 0;
+}
+.all-team{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px 0;
+}
+.team{
+    display: flex;
+    align-items: center;
+    padding: 15px 25px;
+    color: rgb(157 171 251);
+}
+.team img{
+    width: 30%;
+    border-radius: 5px;
+}
+.team p{
+    font-size: 24px;
+    margin-left: 10px;
+    font-weight: 700;
+}
+/* card style end */
+/* all group page design end */
+
+
 /* resposive design start*/
-/* table device 320px — 480px */
+/* phone device 320px — 480px */
 @media only screen and (min-width: 320px) and (max-width: 480px) {
     .container{
         margin-bottom: 50px;
@@ -319,7 +407,7 @@ hr{
     }
 }
 
-/* table device 481px — 768px */
+/* tablet device 481px — 768px */
 @media only screen and (min-width: 481px) and (max-width: 768px){
     .container{
         margin-bottom: 00px;
@@ -386,6 +474,12 @@ hr{
     .temp-card{
         display: none;
     }
+    /* team name style for all group page */
+    .team p{
+        font-size: 14px;
+        margin-left: 10px;
+        font-weight: 500;
+    }
     .view-all-btn{
         display: block;
     }
@@ -407,76 +501,3 @@ hr{
     }
 }
 /* resposive design end*/
-
-
-/* upcoming match page design start */
-/* card style start */
-.match{
-    border: 0.5px solid #E8E8E8;
-}
-.match-schedule{
-    padding: 50px 30px;
-}
-.flag-img{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.flag-img img{
-    width: 40%;
-}
-.vs{
-    font-weight: 700;
-    font-size: 16px;
-}
-.match-details{
-    padding-top: 20px;
-    text-align: center;
-}
-.match-title{
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 30px;
-}
-.match-time{
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-    color: #4d4d4d;
-}
-/* card style end */
-/* upcoming match page design end */
-
-/* all group page design start */
-/* card style start */
-.card-bg{
-    background-color: #4d4d4d;
-}
-.group-name{
-    background-color: tomato;
-    border-radius: 5px 5px 0 0;
-    text-align: center;
-    padding: 25px 0;
-}
-.all-team{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 10px 0;
-}
-.team{
-    display: flex;
-    align-items: center;
-    padding: 15px 25px;
-}
-.team img{
-    width: 30%;
-    border-radius: 5px;
-}
-.team p{
-    font-size: 24px;
-    margin-left: 10px;
-    font-weight: 700;
-}
-/* card style end */
-/* all group page design end */

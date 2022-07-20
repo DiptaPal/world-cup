@@ -276,9 +276,13 @@ hr{
 .flag-img img{
     width: 40%;
 }
+.flag-img p{
+    font-weight: 700;
+    font-size: 16px; 
+}
 .vs{
     font-weight: 700;
-    font-size: 16px;
+    font-size: 16px; 
 }
 .match-details{
     padding-top: 20px;
@@ -301,7 +305,7 @@ hr{
 /* all group page design start */
 /* card style start */
 .card-bg{
-    background-color: #4d4d4d;
+    background-color: #9d2042;
 }
 .group-name{
     background-color: rgb(36, 153, 248);
@@ -314,13 +318,16 @@ hr{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 10px 0;
+    padding: 10px 10px;
 }
 .team{
     display: flex;
     align-items: center;
-    padding: 15px 25px;
-    color: rgb(157 171 251);
+    padding: 10px 25px;
+    color: white;
+    margin: 5px 0;
+    background-color: rgb(129, 126, 126);
+    border-radius: 5px;
 }
 .team img{
     width: 30%;
@@ -394,6 +401,16 @@ hr{
     .main-right-cards{
         grid-template-columns: repeat(1, 1fr);
     }
+    /* team style for all group page start */
+    .vs::after{
+        content: '\a';
+        white-space: pre;
+    }
+    .vs::before{
+        content: '\a';
+        white-space: pre;
+    }
+     /* team style for all group page start */
     hr{
         width: 85%;
     }
@@ -474,12 +491,21 @@ hr{
     .temp-card{
         display: none;
     }
-    /* team name style for all group page */
+    /* team style for all group page start */
     .team p{
         font-size: 14px;
         margin-left: 10px;
         font-weight: 500;
     }
+    .vs::after{
+        content: '\a';
+        white-space: pre;
+    }
+    .vs::before{
+        content: '\a';
+        white-space: pre;
+    }
+     /* team style for all group page start */
     .view-all-btn{
         display: block;
     }

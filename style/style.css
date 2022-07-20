@@ -149,7 +149,7 @@
     grid-gap: 24px;
 }
 .card{
-    border: 0.5px solid #E8E8E8;;
+    border: 0.5px solid #E8E8E8;
     border-radius: 10px;
 }
 .card-img img{
@@ -409,15 +409,22 @@ hr{
 }
 /* resposive design end*/
 
+
+/* upcoming match page design start */
 /* card style start */
-.country-flag{
+.match{
+    border: 0.5px solid #E8E8E8;
+}
+.match-schedule{
+    padding: 50px 30px;
+}
+.flag-img{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
-.match{
-    display: grid;
-    grid-template-columns: repeat(3, 1hf);
+.flag-img img{
+    width: 40%;
 }
 .vs{
     font-weight: 700;
@@ -425,6 +432,7 @@ hr{
 }
 .match-details{
     padding-top: 20px;
+    text-align: center;
 }
 .match-title{
     font-weight: 600;
@@ -438,5 +446,4 @@ hr{
     color: #4d4d4d;
 }
 /* card style end */
-
-/* upcoming match page design */
+/* upcoming match page design end */

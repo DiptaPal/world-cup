@@ -55,17 +55,17 @@
 .slider-left{
     width: 50%;
     color: white;
-    padding: 80px;
+    padding: 90px 0 90px 90px;
 }
 .slider-title{
     font-weight: 700;
-    font-size: 70px;
+    font-size: 71px;
     line-height: 80px;
     margin: 0;
 }
 .slider-description{
     font-weight: 400;
-    font-size: 16px;
+    font-size: 24px;
     margin-top: 20px;
     margin-bottom: 45px;
 }
@@ -334,16 +334,16 @@ hr{
     border-radius: 5px;
 }
 .team p{
-    font-size: 24px;
+    font-size: 20px;
     margin-left: 10px;
-    font-weight: 700;
+    font-weight: 600;
 }
 /* card style end */
 /* all group page design end */
 
 
 /* resposive design start*/
-/* phone device 320px — 480px */
+/* phone device 320px — 576px */
 @media only screen and (min-width: 320px) and (max-width: 576px) {
     .container{
         margin-bottom: 50px;
@@ -428,7 +428,7 @@ hr{
     }
 }
 
-/* tablet device 481px — 768px */
+/* tablet device 577px — 768px */
 @media only screen and (min-width: 577px) and (max-width: 768px){
     .container{
         margin-bottom: 50px;
@@ -437,8 +437,7 @@ hr{
         height: 25em;
     }
     .slider-left{
-        width: 50%;
-        padding: 0px 35px;
+        padding: 0 0 0 40px;
     }
     .slider-title{
         font-size: 24px;
@@ -536,8 +535,7 @@ hr{
         height: 25em;
     }
     .slider-left{
-        width: 50%;
-        padding: 0px 35px;
+        padding: 0 0 0 40px;
     }
     .slider-title{
         font-size: 20px;
@@ -553,22 +551,21 @@ hr{
     }
     .slider-right img{
         width: 35%;
-        height: 20em;
+        height: 23em;
     }
     .main-right-cards{
         grid-template-columns: repeat(1, 1fr);
     }
 }
 
-/* laptop device  993px - 1200pxpx */
+/* laptop device  993px - 1200px */
 
 @media only screen and (min-width: 993px) and (max-width: 1200px){
     .slider{
         height: 25em;
     }
     .slider-left{
-        width: 50%;
-        padding: 0px 35px;
+        padding: 0 0 0 60px;
     }
     .slider-title{
         font-size: 28px;
@@ -583,7 +580,7 @@ hr{
     }
     .slider-right img{
         width: 32%;
-        height: 20em;
+        height: 23em;
     }
     .main-right-cards{
         grid-template-columns: repeat(2, 1fr);
@@ -605,5 +602,46 @@ hr{
         display: none;
     }
      /* all group page  style end */
+}
+
+/* Large device  1201px - 1400px */
+@media only screen and (min-width: 1201px) and (max-width: 1400px){
+    .slider{
+        height: 25em;
+    }
+    .slider-left{
+        padding: 0 0 0 70px;
+    }
+    .slider-title{
+        font-size: 28px;
+        line-height: 33px;
+    }
+    .slider-description{
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .btn{
+        padding: 12px 15px;
+    }
+    .slider-right img{
+        width: 28%;
+        height: 23em;
+    }
+    .main-right-cards{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    /* all group page  style start*/
+    .vs::after{
+        content: '\a';
+        white-space: pre;
+    }
+    .vs::before{
+        content: '\a';
+        white-space: pre;
+    }
+    .team p{
+        font-size: 15px;
+        font-weight: 500;
+    }
 }
 /* resposive design end*/

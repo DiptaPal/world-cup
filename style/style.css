@@ -414,6 +414,9 @@ hr{
         content: '\a';
         white-space: pre;
     }
+    .team p{
+        font-size: 21px;
+    }
      /* all group page  style end */
     .footer-nav{
         text-align: center;
@@ -494,8 +497,7 @@ hr{
     }
     /* all group page style start */
     .team p{
-        font-size: 14px;
-        margin-left: 10px;
+        font-size: 18px;
         font-weight: 500;
     }
     .vs::after{
@@ -586,8 +588,22 @@ hr{
     .main-right-cards{
         grid-template-columns: repeat(2, 1fr);
     }
+    /* all group page  style start*/
+    .vs::after{
+        content: '\a';
+        white-space: pre;
+    }
+    .vs::before{
+        content: '\a';
+        white-space: pre;
+    }
+    .team p{
+        font-size: 18px;
+        font-weight: 500;
+    }
     .temp-card{
         display: none;
     }
+     /* all group page  style end */
 }
 /* resposive design end*/

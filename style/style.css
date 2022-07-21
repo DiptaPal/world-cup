@@ -59,12 +59,11 @@
 }
 .slider-title{
     font-weight: 700;
-    font-size: 71px;
+    font-size: 75px;
     line-height: 80px;
     margin: 0;
 }
 .slider-description{
-    font-weight: 400;
     font-size: 24px;
     margin-top: 20px;
     margin-bottom: 45px;
@@ -538,11 +537,11 @@ hr{
         padding: 0 0 0 40px;
     }
     .slider-title{
-        font-size: 20px;
+        font-size: 30px;
         line-height: 33px;
     }
     .slider-description{
-        font-size: 14px;
+        font-size: 12px;
         line-height: 24px;
     }
     .btn{
@@ -568,11 +567,11 @@ hr{
         padding: 0 0 0 60px;
     }
     .slider-title{
-        font-size: 28px;
+        font-size: 35px;
         line-height: 33px;
     }
     .slider-description{
-        font-size: 18px;
+        font-size: 14px;
         line-height: 24px;
     }
     .btn{
@@ -613,11 +612,11 @@ hr{
         padding: 0 0 0 70px;
     }
     .slider-title{
-        font-size: 28px;
+        font-size: 40px;
         line-height: 33px;
     }
     .slider-description{
-        font-size: 18px;
+        font-size: 16px;
         line-height: 24px;
     }
     .btn{

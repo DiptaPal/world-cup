@@ -405,7 +405,7 @@ hr{
     .main-right-cards{
         grid-template-columns: repeat(1, 1fr);
     }
-    /* team style for all group page start */
+    /* all group page  style start*/
     .vs::after{
         content: '\a';
         white-space: pre;
@@ -414,10 +414,7 @@ hr{
         content: '\a';
         white-space: pre;
     }
-     /* team style for all group page start */
-    hr{
-        width: 85%;
-    }
+     /* all group page  style end */
     .footer-nav{
         text-align: center;
         grid-template-columns: repeat(1, 1fr);
@@ -495,7 +492,7 @@ hr{
     .temp-card{
         display: none;
     }
-    /* team style for all group page start */
+    /* all group page style start */
     .team p{
         font-size: 14px;
         margin-left: 10px;
@@ -509,7 +506,7 @@ hr{
         content: '\a';
         white-space: pre;
     }
-     /* team style for all group page start */
+     /* all group page style end */
     .view-all-btn{
         display: block;
     }
@@ -588,6 +585,9 @@ hr{
     }
     .main-right-cards{
         grid-template-columns: repeat(2, 1fr);
+    }
+    .temp-card{
+        display: none;
     }
 }
 /* resposive design end*/

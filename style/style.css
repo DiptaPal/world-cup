@@ -25,6 +25,29 @@
         color: white;
     } 
 }
+
+@keyframes moving {
+    0%{
+        left: 0%;
+        transform: rotate(0deg);
+    }
+    25%{
+        left: 25px;
+        transform: rotate(90deg);
+    }
+    50%{
+        left: 50px;
+        transform: rotate(180deg);
+    }
+    75%{
+        left: 75x;
+        transform: rotate(270deg);
+    }
+    100%{
+        left: 100px;
+        transform: rotate(360deg);
+    } 
+}
 /* animation style end */
 
 /* common style start */
@@ -68,6 +91,10 @@
     margin-top: 20px;
     margin-bottom: 45px;
 }
+.slider-btn{
+    display: flex;
+    align-items: center;
+}
 .btn{
     text-decoration: none;
     padding: 16px 25px;
@@ -84,7 +111,11 @@
     background-color: black;
     box-shadow: 0px 0px 20px 15px rgba(64, 248, 141, 0.5);
 }
-
+.football{
+    margin-left: 20px;
+    width: 7%;
+    animation: moving 10s ease-in-out 0.5s infinite alternate;
+}
 .slider-right{
     width: 50%;
     display: flex;
@@ -358,10 +389,6 @@ hr{
         width: 80%;
         padding: 40px 0;
     }
-    .btn{
-        padding: 8px 12px;
-        font-size: 12px;
-    }
     .slider-title{
         font-size: 22px;
         line-height: 33px;
@@ -374,6 +401,17 @@ hr{
         text-overflow: ellipsis;
         margin-bottom: 20px;
         padding: 10px 15px;
+    }
+    .slider-btn{
+        justify-content: center;
+    }
+    .btn{
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+    .football{
+        margin-left: 10px;
+        width: 7%;
     }
     .slider-right img{
         position: relative;
@@ -453,6 +491,10 @@ hr{
     .btn{
         font-size: 20px;
         padding: 5px 5px;
+    }
+    .football{
+        margin-left: 10px;
+        width: 12%;
     }
     .slider-right img{
         width: 35%;
@@ -548,6 +590,10 @@ hr{
         font-size: 20px;
         padding: 12px 10px;
     }
+    .football{
+        margin-left: 10px;
+        width: 12%;
+    }
     .slider-right img{
         width: 35%;
         height: 23em;
@@ -576,6 +622,10 @@ hr{
     }
     .btn{
         padding: 12px 15px;
+    }
+    .football{
+        margin-left: 10px;
+        width: 12%;
     }
     .slider-right img{
         width: 32%;
@@ -621,6 +671,10 @@ hr{
     }
     .btn{
         padding: 12px 15px;
+    }
+    .football{
+        margin-left: 10px;
+        width: 9%;
     }
     .slider-right img{
         width: 28%;
